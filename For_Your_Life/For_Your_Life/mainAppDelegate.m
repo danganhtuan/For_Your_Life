@@ -7,12 +7,26 @@
 //
 
 #import "mainAppDelegate.h"
+#import "DatabaseManager.h"
+#import "FMDatabase.h"
 
 @implementation mainAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    FMDatabase *db = [DatabaseManager dbConnect];
+    
+    NSString*   sql = @"SELECT * FROM Artist;";
+    FMResultSet*    rs = [db executeQuery:sql];
+    while( [rs next] )
+    {
+        NSLog(@"%@",[rs stringForColumn:@"ArtistName"]);
+    }
+    
+    [rs close];
+    [db close];
     return YES;
 }
 							
