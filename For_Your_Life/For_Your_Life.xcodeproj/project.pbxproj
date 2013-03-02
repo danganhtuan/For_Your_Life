@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E5704AB16E1BA6F003B8E78 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5704AA16E1BA6F003B8E78 /* QuartzCore.framework */; };
 		7E6D409116E1A4C700C40900 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E6D409016E1A4C700C40900 /* UIKit.framework */; };
 		7E6D409316E1A4C700C40900 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E6D409216E1A4C700C40900 /* Foundation.framework */; };
 		7E6D409516E1A4C700C40900 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E6D409416E1A4C700C40900 /* CoreGraphics.framework */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7E5704AA16E1BA6F003B8E78 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		7E6D408D16E1A4C700C40900 /* For_Your_Life.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = For_Your_Life.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E6D409016E1A4C700C40900 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7E6D409216E1A4C700C40900 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -65,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E5704AB16E1BA6F003B8E78 /* QuartzCore.framework in Frameworks */,
 				7E6D409116E1A4C700C40900 /* UIKit.framework in Frameworks */,
 				7E6D409316E1A4C700C40900 /* Foundation.framework in Frameworks */,
 				7E6D409516E1A4C700C40900 /* CoreGraphics.framework in Frameworks */,
@@ -84,6 +87,63 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7E5704A216E1B7EC003B8E78 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		7E5704A316E1B805003B8E78 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		7E5704A416E1B84D003B8E78 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		7E5704A516E1B869003B8E78 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		7E5704A616E1B87D003B8E78 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Commons;
+			sourceTree = "<group>";
+		};
+		7E5704A716E1B90B003B8E78 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				7E5704A816E1B95F003B8E78 /* Cells */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		7E5704A816E1B95F003B8E78 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		7E5704A916E1B9C8003B8E78 /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = DataSources;
+			sourceTree = "<group>";
+		};
 		7E6D408416E1A4C700C40900 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +166,7 @@
 		7E6D408F16E1A4C700C40900 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7E5704AA16E1BA6F003B8E78 /* QuartzCore.framework */,
 				7E6D409016E1A4C700C40900 /* UIKit.framework */,
 				7E6D409216E1A4C700C40900 /* Foundation.framework */,
 				7E6D409416E1A4C700C40900 /* CoreGraphics.framework */,
@@ -117,6 +178,12 @@
 		7E6D409616E1A4C700C40900 /* For_Your_Life */ = {
 			isa = PBXGroup;
 			children = (
+				7E5704A716E1B90B003B8E78 /* Components */,
+				7E5704A616E1B87D003B8E78 /* Commons */,
+				7E5704A316E1B805003B8E78 /* Controllers */,
+				7E5704A916E1B9C8003B8E78 /* DataSources */,
+				7E5704A416E1B84D003B8E78 /* Models */,
+				7E5704A216E1B7EC003B8E78 /* Views */,
 				7E6D409F16E1A4C700C40900 /* mainAppDelegate.h */,
 				7E6D40A016E1A4C700C40900 /* mainAppDelegate.m */,
 				7E6D40A816E1A4C700C40900 /* MainStoryboard.storyboard */,
@@ -130,6 +197,7 @@
 		7E6D409716E1A4C700C40900 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7E5704A516E1B869003B8E78 /* Images */,
 				7E6D409816E1A4C700C40900 /* For_Your_Life-Info.plist */,
 				7E6D409916E1A4C700C40900 /* InfoPlist.strings */,
 				7E6D409C16E1A4C700C40900 /* main.m */,
@@ -454,6 +522,7 @@
 				7E6D40C716E1A4C700C40900 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7E6D40C816E1A4C700C40900 /* Build configuration list for PBXNativeTarget "For_Your_LifeTests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +531,7 @@
 				7E6D40CA16E1A4C700C40900 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
